@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(2px);
+}
+
+.logoContainer p:nth-child(1) {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.logoContainer p:nth-child(2) {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 15px;
+    text-transform: uppercase;
+}
+
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.searchContainer img {
+    width: 20px;
+}
+
+.searchContainer button {
+    background-color: rgba(255, 204, 82);
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: white;
+}
+
+#heroSection {
+    height: 95vh;
+    width: 99vw;
+}
+
+#heroSection .imageContainer {
+    background-image: url(./assets/meeting.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 250px 190px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#heroSection .imageContainer ul {
+    color: rgba(255, 204, 82);
+    font-size: 18px;
+}
+
+#heroSection .headLine1 {
+    font-weight: bold;
+    color: white;
+    font-size: 46px;
+    width: 540px;
+}
+
+#heroSection .headLine2 {
+    color: white;
+    width: 410px;
+}
+
+#heroSection .btnContainer button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+}
+
+#heroSection .btnContainer button:nth-child(1) {
+    background-color: rgba(255, 204, 82);
+    border-radius: 2px;
+}
+
+#heroSection .btnContainer button:nth-child(2) {
+    text-decoration: underline;
+}
+
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 20px 0px 100px 0px;
+    box-sizing: border-box;
+}
+
+#section2 ul {
+    color: rgba(255, 204, 82);
+    font-size: 20px;
+}
+
+
+#section2 h2 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+#section2 .cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+#section2 .cardsContainer .card {
+    width: 18%;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 5px;
+}
+
+#section2 .cardsContainer .card .cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 65px;
+}
+
+#section2 .cardsContainer .card .cardContent p {
+    text-align: center;
+    color: rgb(117, 117, 117);
+}
+
+#section2 .cardsContainer .card button {
+    background: transparent;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    border: 0;
+    border-top: 1px solid rgb(177, 177, 177);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#section2>p {
+    font-size: 22px;
+    color: rgb(117, 117, 117);
+}
+
+#section3 {
+    display: flex;
+    gap: 50px;
+    background-color: rgba(242, 248, 251);
+    padding: 100px 180px;
+}
+
+#section3 ul {
+    color: rgba(255, 204, 82);
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#section3 .left img {
+    width: 500px;
+    border-radius: 5px;
+}
+
+#section3 .left .imageTitle {
+    position: relative;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 30px 25px;
+    bottom: 95px;
+    right: 30px;
+    background-color: rgba(4, 28, 45);
+    color: white;
+}
+
+#section3 .left .imageTitle p:nth-child(1) {
+    font-size: 16px;
+}
+
+#section3 .left .imageTitle p:nth-child(2) {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#section3 .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    padding: 0px 50px;
+}
+
+#section3 .right ul {
+    padding-left: 22px;
+}
+
+
+#section3 .right h2 {
+    font-size: 52px;
+    letter-spacing: -2px;
+}
+
+#section3 .right p {
+    font-size: 18px;
+    color: rgb(117, 117, 117);
+}
+
+#section3 .right .steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-top: 10px;
+}
+
+#section3 .right .stepsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#section3 .right .stepsContainer h4 {
+    font-size: 24px;
+}
+
+#section3 .right .stepsContainer p {
+    font-size: 18px;
+}
+
+#section3 .right .steps img {
+    width: 220px;
+    border-radius: 5px;
+}
+
+
+#section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section4 .imageContainer {
+    background-image: url(./assets/sectionImg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 250px;
+    box-sizing: border-box;
+}
+
+
+#section4 .imageContainer h2 {
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    font-size: 45px;
+    width: 70%;
+}
+
+#section4 .imageContainer button {
+    height: fit-content;
+    font-size: 17px;
+    border: 0;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: rgba(255, 204, 82);
+    color: white;
+
+}
+
+#section4 .statsContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    border-radius: 10px;
+    padding: 40px 80px;
+    bottom: 65px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+}
+
+#section4 .statsContainer .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#section4 .statsContainer .stats h4 {
+    font-size: 36px;
+    text-decoration: 5px underline rgba(255, 204, 82);
+}
+
+#section4 .statsContainer .stats p{
+    font-size: 18px;
+    color: rgb(117, 117, 117);
+}
+
+
+#section5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 20px 0px 100px 0px;
+    box-sizing: border-box;
+}
+
+#section5 ul {
+    color: rgba(255, 204, 82);
+    font-size: 20px;
+}
+
+
+#section5 h2 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+#section5 .cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+#section5 .cardsContainer .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    background-color: rgba(242, 248, 251);
+    border-radius: 5px;
+}
+
+#section5 .cardsContainer .card .cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 65px;
+}
+
+#section5 .cardsContainer .card .cardContent p {
+    text-align: center;
+    color: rgb(117, 117, 117);
+}
+
+#section5 .cardsContainer .card .buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 5px;
+    width: 60%;
+    padding: 0px 0px 20px 0px;
+}
+
+#section5 .cardsContainer .card .buttons .iconContainer{
+    border-radius: 50%;
+    padding: 5px;
+    /* border: 1px solid rgb(117, 117, 117); */
+}
+
+#section5 .cardsContainer .card .buttons .iconContainer img{
+    width: 15px;
+    height: 15px;
+}
+
+#section6{
+    background-color: rgba(242, 248, 251);
+}
+
+#section6 ul {
+    color: rgba(255, 204, 82);
+    font-size: 20px;
+}
+
+
+#section6 h2 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
