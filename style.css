@@ -4,6 +4,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    position: relative;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -14,8 +18,10 @@ nav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     position: fixed;
+    background-color: rgba(4, 28, 45, 0.6);
     top: 0;
-    backdrop-filter: blur(2px);
+    border-bottom: 1px solid rgba(186, 186, 186, 0.25);
+    backdrop-filter: blur(5px);
 }
 
 .logoContainer p:nth-child(1) {
@@ -66,23 +72,35 @@ nav ul {
     width: 99vw;
 }
 
+#heroSection .overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(4, 28, 45) 40%,
+            rgba(12, 27, 64, 0.01) 100%);
+    padding: 250px 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #heroSection .imageContainer {
     background-image: url(./assets/meeting.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 250px 190px;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
 }
 
 
 #heroSection .imageContainer ul {
     color: rgba(255, 204, 82);
     font-size: 18px;
+    padding-left: 18px;
 }
 
 #heroSection .headLine1 {
@@ -486,7 +504,7 @@ nav ul {
     width: 80px;
 }
 
-#section7{
+#section7 {
     background-image: url(./assets/section7img.jpg);
     background-size: cover;
     background-position: center;
@@ -507,17 +525,146 @@ nav ul {
     color: white;
     text-shadow: 0px 0px 2px black;
     font-size: 45px;
-    width: 70%;
+    text-align: end;
+    width: 60%;
 }
 
-#section7 .contentContainer button {
+#section7 .contentContainer .btnContainer {
+    display: flex;
+    align-items: center;
+    gap: 25px;
     height: fit-content;
     font-size: 17px;
     border: 0;
     padding: 10px 40px;
-    text-transform: uppercase;
     border-radius: 5px;
-    background-color: rgba(255, 204, 82);
-    color: white;
+    background-color: transparent;
+    color: rgba(255, 204, 82);
+}
 
+#section7 .contentContainer .btnContainer button {
+    background-color: rgba(255, 204, 82);
+    border: 0;
+    border-radius: 50%;
+    padding: 20px 20px 20px 23px;
+}
+
+#section7 .contentContainer .btnContainer button img {
+    width: 30px;
+    height: 30px;
+}
+
+
+#section8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 20px 0px 100px 0px;
+    box-sizing: border-box;
+}
+
+#section8 ul {
+    color: rgba(255, 204, 82);
+    font-size: 20px;
+}
+
+
+#section8 h2 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+#section8 .cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+#section8 .cardsContainer .card {
+    width: 25%;
+    border: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+}
+
+#section8 .imgContainer img {
+    width: 100%;
+}
+
+#section8 .imgContainer .date {
+    background-color: rgba(4, 28, 45);
+    color: white;
+    width: fit-content;
+    padding: 10px 22px;
+    border-radius: 3px;
+    position: relative;
+    bottom: 47px;
+    left: 310px;
+}
+
+#section8 .imgContainer .date p:nth-child(1) {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#section8 .imgContainer .date p:nth-child(2) {
+    font-size: 24px;
+}
+
+#section8 .cardsContainer .card .cardContent {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    margin-top: -35px;
+    padding: 0px 45px 50px 45px;
+}
+
+#section8 .cardsContainer .card .cardContent .comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#section8 .cardsContainer .card .cardContent .comment p:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(117, 117, 117);
+}
+
+#section8 .cardsContainer .card .cardContent .comment p:nth-child(2) {
+    font-size: 14px;
+    color: rgb(117, 117, 117);
+}
+
+#section8 .cardsContainer .card .cardContent h3 {
+    font-size: 24px;
+    width: 100%;
+}
+
+#section8 .cardsContainer .card button {
+    background: transparent;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    border: 0;
+    border-top: 1px solid rgb(177, 177, 177);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#section8>button {
+    background-color: rgba(255, 204, 82);
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 25px;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
 }
