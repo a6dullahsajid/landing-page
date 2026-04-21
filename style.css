@@ -5,7 +5,7 @@
 }
 
 body {
-    position: relative;
+
 }
 
 nav {
@@ -18,8 +18,9 @@ nav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     position: fixed;
-    background-color: rgba(4, 28, 45, 0.6);
     top: 0;
+    z-index: 999;
+    background-color: rgba(4, 28, 45, 0.6);
     border-bottom: 1px solid rgba(186, 186, 186, 0.25);
     backdrop-filter: blur(5px);
 }
@@ -77,12 +78,12 @@ nav ul {
     width: 100%;
     height: 100%;
     background: linear-gradient(to right,
-            rgba(4, 28, 45) 40%,
+            rgba(4, 28, 45) 32%,
             rgba(12, 27, 64, 0.01) 100%);
     padding: 250px 190px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -126,11 +127,13 @@ nav ul {
 
 #heroSection .btnContainer button:nth-child(1) {
     background-color: rgba(255, 204, 82);
-    border-radius: 2px;
+    border-radius: 5px;
+    font-weight: 500;
 }
 
 #heroSection .btnContainer button:nth-child(2) {
     text-decoration: underline;
+    font-weight: 500;
 }
 
 
@@ -219,6 +222,7 @@ nav ul {
 
 #section3 .left .imageTitle {
     position: relative;
+    z-index: 0;
     width: fit-content;
     border-radius: 5px;
     padding: 30px 25px;
@@ -342,6 +346,7 @@ nav ul {
 #section4 .statsContainer {
     position: relative;
     display: flex;
+    z-index: 0;
     justify-content: space-around;
     width: 70%;
     border-radius: 10px;
@@ -603,6 +608,7 @@ nav ul {
     padding: 10px 22px;
     border-radius: 3px;
     position: relative;
+    z-index: 0;
     bottom: 47px;
     left: 310px;
 }
@@ -667,4 +673,167 @@ nav ul {
     color: white;
     font-size: 16px;
     text-transform: uppercase;
+}
+
+
+#section9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(4, 28, 45);
+    padding: 30px 180px;
+}
+
+#section9 .top {
+    position: relative;
+    z-index: 0;
+    bottom: 80px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+
+#section9 .brandContainer {
+    background-color: rgba(255, 204, 82);
+    border-radius: 10px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section9 .brandContainer p:nth-child(1) {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+#section9 .brandContainer p:nth-child(2) {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#section9 .top .contactDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(117, 117, 117);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 25px;
+    width: 75%;
+    font-size: 14px;
+}
+
+#section9 .top .contactDetails .contactCard {
+    width: 30%;
+}
+
+#section9 .middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+#section9 .middle>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 200px;
+    width: 25%;
+    gap: 25px;
+    padding: 35px 25px;
+}
+
+.footContent {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#section9 .middle h4 {
+    font-size: 19px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#section9 .middle .footBtns {
+    display: flex;
+    gap: 25px;
+}
+
+#section9 .middle .footBtns button {
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    padding: 10px;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+
+#section9 .footBtns img {
+    width: 15px;
+    filter: invert(1) drop-shadow(0px 0px 0px white);
+}
+
+#section9 .newsContainer {
+    display: flex;
+    gap: 15px;
+}
+
+#section9 .newsContainer span p:nth-child(1) {
+    font-weight: 500;
+}
+
+#section9 .newsContainer span p:nth-child(2) {
+    color: rgb(117, 117, 117);
+    font-size: 15px;
+}
+
+#section9 .newsContainer img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+#section9 .middle input {
+    border: 0;
+    font-size: 16px;
+    color: rgb(117, 117, 117);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#section9 .middle div:nth-child(4) button {
+    padding: 10px;
+    background-color: rgba(255, 204, 82);
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgba(4, 28, 45);
+    color: white;
+    padding: 20px 0px;
+    border-top: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+footer p:nth-child(2) {
+    color: rgba(255, 204, 82);
 }
